@@ -9,7 +9,7 @@
 
 Projeto construído no evento Next Level Week da rocketseat.
 
-[🔗 Clique aqui para acessar](https://andremayert.github.io/nlw-explorer-challenge/)
+[🔗 Clique aqui para acessar](https://andremayert.github.io/nwl-explorer-challenge/)
 
 ## 🛠 Tecnologias
 
