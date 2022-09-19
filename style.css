@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+body {
+    background-color: #121214;
+    background-image: url(./background/Fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+}
+
+body * {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 160%;
+}
+
+header {
+    padding-top: 32px;
+    height: 152px;
+}
+
+header div {
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    transition: transform .3s;
+}
+
+header div:hover{
+    transform: scale(1.1);
+}
+
+header img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+main {
+    max-width: 520px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+}
+
+section {
+    color: white;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section h2 {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: #C1C1C1;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+section div {
+    background-color: #262629;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;;
+}
+
+section ul {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-top: 24px;
+}
+
+section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+.movies-list img {
+    border-radius: 8px;
+    width: 100px;
+    border: 1px solid #443E54;
+}
+
+.series-list img {
+    border-radius: 8px;
+    border: 1px solid #443E54;
+    width: 100px;
+}
+
+/* animation */
+
+header div {
+    animation: fromTop .7s .4s backwards;
+}
+
+main section {
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0;
+}
+
+main section:nth-child(2) {
+    animation-delay: .3s;
+}
+
+main section:nth-child(3) {
+    animation-delay: .7s;
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform:translateY(-30px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform:translateY(30px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
